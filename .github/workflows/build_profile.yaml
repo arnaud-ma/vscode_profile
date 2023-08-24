@@ -1,0 +1,33 @@
+name: build Python.code-profile
+
+on:
+  push:
+    paths:
+      - 'settings.json'
+      - 'keybindings.json'
+      - 'python.json'
+      - 'extensions.json'
+      - 'scripts/build_profile.py'
+  workflow_dispatch:
+
+
+jobs:
+  build-Python-code-profile:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Build vscode profile
+        run: python scripts/build_profile.py
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: 'Python.code-profile'
+          commit_message: 'Update vscode profile'
+
+

@@ -1,0 +1,337 @@
+{
+  //
+  //
+  //
+  // PYTHON GENERAL
+  //
+  //
+  //
+  "[python]": {
+    // ruff formatter, see https://github.com/astral-sh/ruff-vscode#example-configurations
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true
+    },
+    // editor
+    "editor.wordBasedSuggestions": false,
+    "editor.tabSize": 4,
+    "editor.rulers": [
+      { // PEP8 documentation
+        "column": 72,
+        "color": "#37ff001b"
+      },
+      { // PEP8
+        "column": 79
+      },
+      { // black formatter
+        "column": 88,
+        "color": "#ffff00"
+      },
+      { // the max of the max
+        "column": 120,
+        "color": "#ff0000"
+      }
+    ],
+    "editor.suggest.showSnippets": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.acceptSuggestionOnCommitCharacter": false
+  },
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "autoDocstring.includeExtendedSummary": true,
+  "autoDocstring.quoteStyle": "\"\"\"",
+  "autoDocstring.guessTypes": true,
+  //
+  //
+  //
+  // Linting / Formatting / Type Checking / Testing
+  //
+  //
+  //
+  "black-formatter.args": [
+    "--line-length=88"
+  ],
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.stubPath": "typings",
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.gotoDefinitionInStringLiteral": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.completeFunctionParens": false,
+  "python.analysis.enableSyncServer": false,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  //
+  // - errors
+  //
+  "python.analysis.diagnosticSeverityOverrides": {},
+  //
+  // - inlayHints
+  //
+  "python.analysis.inlayHints.callArgumentNames": false,
+  "python.analysis.inlayHints.variableTypes": false,
+  "python.analysis.inlayHints.functionReturnTypes": false,
+  "python.analysis.inlayHints.pytestParameters": false,
+  //
+  // - tests / debug
+  //
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": false,
+  "testExplorer.showOnRun": true,
+  "debug.showInStatusBar": "onFirstSessionStart",
+  //
+  //
+  //
+  // EDITOR
+  //
+  //
+  // - auto-completion / formatting / linting / highlighting
+  //
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.linkedEditing": true,
+  "editor.lightbulb.enabled": true,
+  "editor.suggest.showWords": false,
+  "editor.pasteAs.enabled": true,
+  "editor.occurrencesHighlight": true,
+  //
+  // - font / writing style
+  //
+  "editor.fontFamily": "'Jetbrains Mono', 'Consolas', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.matchBrackets": "always",
+  "editor.renderWhitespace": "trailing",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.mouseWheelZoom": true,
+  //
+  // - minimap
+  //
+  "editor.minimap.size": "fill",
+  "editor.minimap.enabled": false,
+  "editor.minimap.autohide": true,
+  "editor.minimap.renderCharacters": true,
+  //
+  // - problems / errors / warnings / infos
+  //
+  "problems.decorations.enabled": true,
+  "problems.showCurrentInStatus": false,
+  "problems.autoReveal": false,
+  //
+  //
+  //
+  // WORKBENCH
+  //
+  //
+  //
+  "workbench.tree.indent": 15,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.startupEditor": "welcomePage",
+  "workbench.editor.tabSizing": "fit",
+  "workbench.editor.splitSizing": "auto",
+  "workbench.settings.openDefaultSettings": false,
+  //
+  //
+  //
+  // FILES
+  //
+  //
+  //
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.readonlyInclude": {
+    "**/node_modules/**": true,
+    "**/.venv/**": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/indent.log": true
+  },
+  //
+  //
+  //
+  // EXPLORER / SEARCH
+  //
+  //
+  //
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.autoReveal": false,
+  "explorer.copyRelativePathSeparator": "/",
+  "search.useIgnoreFiles": true,
+  //
+  //
+  //
+  // TERMINAL
+  //
+  //
+  //
+  "terminal.integrated.scrollback": 100000,
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.shellIntegration.suggestEnabled": true,
+  "terminal.integrated.unicodeVersion": "11",
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.fontFamily": "'MesloLGS NF', 'Consolas', 'Courier New', monospace",
+  //
+  //
+  //
+  // COMMENT HIGHLIGHTING / TODOs
+  //
+  //
+  //
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": true,
+  "todo-tree.highlights.enabled": false,
+  "todo-tree.general.statusBar": "top three",
+  "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+  "todo-tree.filtering.ignoreGitSubmodules": true,
+  "todo-tree.filtering.useBuiltInExcludes": "file excludes",
+  "todo-tree.tree.scanMode": "workspace only",
+  "todo-tree.general.debug": false,
+  "todo-tree.filtering.includeHiddenFiles": true,
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.tree.flat": true,
+  "todo-tree.filtering.excludeGlobs": [
+    "**/.venv/*/**",
+    "**/.tox/**"
+  ],
+  "todo-tree.general.tags": [
+    "BUG",
+    "FIXME",
+    "TODO",
+    "?"
+  ],
+  //
+  //
+  //
+  // THEMES / CUSTOMIZATION
+  //
+  //
+  //
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.tokenColorCustomizations": {
+    "[One Dark Pro*]": { // Apply these rules to every theme that begin with "One Dark Pro"
+      "textMateRules": [
+        {
+          "name": "italic comment",
+          "scope": "comment, punctuation.definition.comment, variable.parameter.language.python",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    }
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "[One Dark Pro*]": {
+      "enabled": true,
+      "rules": {
+        // see https://github.com/Binaryify/OneDark-Pro#python--pylance-users for more rules
+        "*.typeHint:python": "#8c8c8c",
+        "*.typeHintComment:python": "#8c8c8c",
+        "parameter:python": {
+          "italic": true
+        },
+        "*.abstract:python": {
+          "bold": true
+        },
+        "*.async": {
+          "foreground": "#eb78ff"
+        },
+        "module": {
+          "bold": true
+        }
+      }
+    }
+  },
+  //
+  //
+  //
+  // GIT
+  //
+  //
+  //
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": true,
+  //
+  //
+  //
+  // MARKDOWN
+  //
+  //
+  //
+  "[markdown]": {
+    "editor.defaultFormatter": "vscode.markdown-language-features"
+  },
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
+  "markdown.preview.scrollPreviewWithEditor": false,
+  "markdown.preview.scrollEditorWithPreview": false,
+  //
+  //
+  //
+  // CSpell
+  //
+  //
+  //
+  "cSpell.language": "en-GB,en-US,en",
+  "cSpell.languageSettings": [
+    {
+      "languageId": "python",
+      "allowCompoundWords": true,
+      "dictionaries": [
+        "python",
+        "fonts"
+      ]
+    }
+  ],
+  // Custom dict instead of every word in the cSpell.userWords
+  // "cSpell.customDictionaries": {
+  //   "my_dict": {
+  //     "name": "my_dict",
+  //     "path": "absolute_path_to_my_dict.txt",
+  //     "noSuggest": false,
+  //     "description": "My custom dictionary",
+  //     "addWords": true,
+  //   },
+  //   "custom": true,
+  //   "internal-terms": false,
+  // },
+  "cSpell.userWords": [
+    "autofetch",
+    "autohide",
+    "Consolas",
+    "Jetbrains",
+    "Meslo",
+    "mypy",
+    "Parens",
+    "pycache",
+    "Pylance",
+    "pytest",
+    "venv"
+  ]
+}

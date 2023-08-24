@@ -1,0 +1,13 @@
+[
+  {"identifier": {"id": "ms-python.python"}, "displayName": "Python"},
+  {"identifier": {"id": "ms-python.vscode-pylance"}, "displayName": "Pylance"},
+  {"identifier": {"id": "donjayamanne.python-environment-manager"}, "displayName": "Python Environment Manager"},
+  {"identifier": {"id": "ms-python.black-formatter"}, "displayName": "Black Formatter"},
+  {"identifier": {"id": "charliermarsh.ruff"}, "displayName": "Ruff"},
+  {"identifier": {"id": "kevinrose.vsc-python-indent"}, "displayName": "Python Indent"},
+  {"identifier": {"id": "njpwerner.autodocstring"}, "displayName": "Auto Docstring"},
+  {"identifier": {"id": "gruntfuggly.todo-tree"}, "displayName": "Todo Tree"},
+  {"identifier": {"id": "aaron-bond.better-comments"}, "displayName": "Better Comments"},
+  {"identifier": {"id": "tamasfe.even-better-toml"}, "displayName": "Even Better TOML"},
+  {"identifier": {"id": "zhuangtongfa.material-theme"}, "displayName": "One Dark Pro"}
+]

@@ -1,0 +1,52 @@
+// Place your key bindings in this file to override the defaults
+[
+  //
+  //
+  // PYTHON
+  //
+  //
+  //
+  {
+    "key": "ctrl+enter",
+    "command": "python.execInTerminal-icon",
+    "when": "editorLangId == 'python'"
+  },
+  //
+  //
+  // TERMINAL
+  //
+  //
+  //
+  {
+    "key": "ctrl+k t",
+    "command": "workbench.action.terminal.clear"
+  },
+  {
+    "key": "ctrl+shift t",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clearSelection",
+    "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected && !terminalFindVisible || terminalFocus && terminalProcessSupported && terminalTextSelected && !terminalFindVisible"
+  },
+  //
+  //
+  // EDITOR
+  //
+  //
+  //
+  {
+    "key": "f4",
+    "command": "editor.action.goToReferences",
+    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "alt+d",
+    "command": "cSpell.addWordToUserDictionary"
+  }
+]
