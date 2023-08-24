@@ -1,6 +1,6 @@
 import json
 
-NAME = "Python2"
+NAME = "Python"
 
 
 def create_dict(name: str) -> dict[str, str | dict]:

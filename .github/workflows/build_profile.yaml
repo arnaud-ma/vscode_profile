@@ -27,7 +27,7 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: 'Python.code-profile'
+          file_pattern: '*.code-profile'
           commit_message: 'Update vscode profile'
 
 
