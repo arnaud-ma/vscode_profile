@@ -6,7 +6,7 @@ A python profile with a lot of settings and a full theme already configured. The
 1. Navigate to: **File > Preferences > Profiles > Import Profile...**
 ![](doc/image.png)
 
-1. Paste the link: [link](https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/Python.code-profile)
+1. Paste the link: https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/Python.code-profile
 
 If you want to get the ligatures, you can install the [Jetbrains mono font](https://github.com/JetBrains/JetBrainsMono#installation)
 
