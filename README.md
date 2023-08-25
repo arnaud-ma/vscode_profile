@@ -17,7 +17,7 @@ If you want to get the ligatures, you can install the [Jetbrains mono font](http
 ### Ruff / black configuration
 
 Unfortunately there can be many problems putting ruff settings directly into the `settings.json` file and applying those settings for any workspace. What you can do instead is to add a `pyproject.toml` file at the root of your project with all the settings you want. \
-For example my template file is :
+A template file could be :
 
 <details>
 <summary>pyproject.toml</summary>
@@ -123,9 +123,9 @@ reportUnusedFunction = false
 ## Extensions
 
 - `Python` - Python extension for Visual Studio Code.
-- `Pylance` - Fast, feature-rich language support for Python.
-- `Black formatter` -  The uncompromising Python code formatter.
-- `Ruff` - Support for the Ruff linter.
+- `Pylance` - Fast, feature-rich language support for Python, including the pyright static type checker.
+- `Black formatter` -  Support for the [Black](https://github.com/psf/black) formatter.
+- `Ruff` - Support for the [Ruff](https://beta.ruff.rs/docs/) linter.
 - `autoDocstring` - Automatically generates docstrings.
 - `Even Better TOML` - TOML file support, for project config setup files like `pyproject.toml`.
 - `Code Spell Checker` - A basic spell checker that works well with code and documents.
@@ -136,13 +136,13 @@ reportUnusedFunction = false
 
 The theme used is `One Dark Pro`. Some features are added in the `settings.json` file :
 
-- For the font, you can see the `- font / writing style` section in the `settings.json` file.
+- The JetBrains mono font is used if installed, with ligatures
 - Module import are bolded
 - Abstract methods are bolded
 - Everything related to annotation is of a different color (close to the comments one)
 - async function are of a different color
 
-For even more customization, you can add (only need to download):
+For even more customization, you can add (only need to install in VS Code) :
 
 - a file icon theme like [Material icon theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - a product icon theme like [Fluent icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
@@ -154,7 +154,8 @@ You can read the `settings.json` file to see the settings that are already confi
 ## Key bindings
 
 - `ctrl+enter` - Run the python file
-- `ctrl+t` - Toggle the terminal, `ctrl+shift t` to open a new one
+- `ctrl+t` - Toggle the terminal
+- `ctrl+shift t` - Open a new terminal
 - `ctrl+k` - If focus on the terminal, clear it
 - `alt+d` - Add word to dictionary
 - `f4` - Go to the reference
