@@ -1,0 +1,91 @@
+[tool.black]
+# should be the same as ruff
+line-length = 88
+
+[tool.ruff]
+# should be the same as black
+line-length = 88
+
+# https://beta.ruff.rs/docs/rules/
+select = [
+    "E",    # pycodestyle
+    "F",    # pyflakes
+    "N",    # pep8-naming
+    "W",    # warnings (indentation, line length, etc.)
+    "UP",   # pyupgrade
+    "S",    # bandit
+    "B",    # bugbear
+    "COM",  # commas
+    "C4",   # comprehensions
+    "EM",   # error messages
+    "RET",  # returns
+    "RSE",  # raise statements
+    "Q003", # quotes
+    "SLF",  # private methods
+    "SIM",  # simplify
+    "TCH",  # type checking
+    "PL",   # pylint
+]
+
+ignore = [
+    "E501",   # line too long
+    "F841",   # unused variable
+    "RET505", # unnecessary `else` after `return` statement
+    "COM812", # trailing comma (conflict with black formatter)
+    "B905",   # no strict in zip
+    "S311",   # random number generator not cryptographically strong
+    "S101",   # use of assert detected
+    "SLF001", # private member access
+]
+
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# exclude some rules in the __init__.py files
+[tool.ruff.extend-per-file-ignores]
+"__init__.py" = ["F401"] # unused import
+
+[tool.ruff.pydocstyle]
+# https://beta.ruff.rs/docs/settings/#pydocstyle-convention
+convention = "google"
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "double"
+multiline-quotes = "double"
+docstring-quotes = "double"
+
+
+[tool.ruff.pylint]
+max-args = 5
+
+[tool.pyright]
+# pyright is only used for type checking, ruff does all the linting
+typeCheckingMode = "basic"
+stubPath = "typings"
+reportGeneralTypeIssues = true
+reportMissingTypeStubs = false
+reportUndefinedVariable = false
+reportUnusedVariable = false
+reportUnusedClass = false
+reportUnusedFunction = false

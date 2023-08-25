@@ -41,7 +41,6 @@
   "python.terminal.activateEnvInCurrentTerminal": true,
   "autoDocstring.includeExtendedSummary": true,
   "autoDocstring.quoteStyle": "\"\"\"",
-  "autoDocstring.guessTypes": true,
   //
   //
   //
@@ -54,18 +53,18 @@
   ],
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.stubPath": "typings",
   "python.analysis.autoFormatStrings": true,
   "python.analysis.gotoDefinitionInStringLiteral": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.useLibraryCodeForTypes": true,
   "python.analysis.completeFunctionParens": false,
-  "python.analysis.enableSyncServer": false,
   "python.analysis.diagnosticMode": "openFilesOnly",
   //
   // - errors
   //
-  "python.analysis.diagnosticSeverityOverrides": {},
+  "python.analysis.diagnosticSeverityOverrides": {
+    //"reportMissingTypeStubs": "error" // https://github.com/microsoft/pyright/blob/main/docs/type-stubs.md#generating-type-stubs-in-vs-code
+  },
   //
   // - inlayHints
   //
@@ -79,7 +78,6 @@
   "python.testing.pytestEnabled": false,
   "python.testing.unittestEnabled": false,
   "testExplorer.showOnRun": true,
-  "debug.showInStatusBar": "onFirstSessionStart",
   //
   //
   //
@@ -139,10 +137,6 @@
   //
   "workbench.tree.indent": 15,
   "workbench.tree.renderIndentGuides": "always",
-  "workbench.startupEditor": "welcomePage",
-  "workbench.editor.tabSizing": "fit",
-  "workbench.editor.splitSizing": "auto",
-  "workbench.settings.openDefaultSettings": false,
   //
   //
   //
@@ -167,7 +161,8 @@
     "**/__pycache__": true,
     "**/.pytest_cache": true,
     "**/.mypy_cache": true,
-    "**/indent.log": true
+    "**/indent.log": true,
+    "**/.tox/**": true
   },
   //
   //
@@ -234,7 +229,7 @@
   //
   "workbench.colorTheme": "One Dark Pro",
   "editor.tokenColorCustomizations": {
-    "[One Dark Pro*]": { // Apply these rules to every theme that begin with "One Dark Pro"
+    "[One Dark Pro*]": {
       "textMateRules": [
         {
           "name": "italic comment",
@@ -253,16 +248,14 @@
         // see https://github.com/Binaryify/OneDark-Pro#python--pylance-users for more rules
         "*.typeHint:python": "#8c8c8c",
         "*.typeHintComment:python": "#8c8c8c",
+        "*.async:python": "#eb78ff",
         "parameter:python": {
           "italic": true
         },
         "*.abstract:python": {
           "bold": true
         },
-        "*.async": {
-          "foreground": "#eb78ff"
-        },
-        "module": {
+        "module:python": {
           "bold": true
         }
       }

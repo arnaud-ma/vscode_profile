@@ -1,16 +1,20 @@
 # VS Code Python Profile with complete settings
 A python profile with a lot of settings and a full theme already configured. The theme used is `One Dark Pro` with some additional features.
 
+
+## Screenshot
+
+![code screenshot](doc/code_screenshot.png)
 ## Installation
 
 1. Navigate to: **File > Preferences > Profiles > Import Profile...**
-![](doc/image.png)
+![find the Import Profile setting](doc/image.png)
 
 1. Paste the link: https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/Python.code-profile
 
 If you want to get the ligatures, you can install the [Jetbrains mono font](https://github.com/JetBrains/JetBrainsMono#installation)
 
-### Ruff configuration
+### Ruff / black configuration
 
 Unfortunately there can be many problems putting ruff settings directly into the `settings.json` file and applying those settings for any workspace. What you can do instead is to add a `pyproject.toml` file at the root of your project with all the settings you want. \
 For example my template file is :
@@ -135,7 +139,7 @@ The theme used is `One Dark Pro`. Some features are added in the `settings.json`
 - For the font, you can see the `- font / writing style` section in the `settings.json` file.
 - Module import are bolded
 - Abstract methods are bolded
-- Everything related to annotation is of a different color (close from the comments color)
+- Everything related to annotation is of a different color (close to the comments one)
 - async function are of a different color
 
 For even more customization, you can add (only need to download):

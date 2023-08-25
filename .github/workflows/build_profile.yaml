@@ -1,6 +1,7 @@
 name: build Python.code-profile
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'settings.json'
@@ -8,7 +9,6 @@ on:
       - 'python.json'
       - 'extensions.json'
       - 'scripts/build_profile.py'
-  workflow_dispatch:
 
 
 jobs:
