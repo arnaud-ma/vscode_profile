@@ -2,6 +2,7 @@ from typing import List
 import asyncio
 from abc import ABC, abstractmethod
 
+
 class Task(ABC):
     """An abstract base class representing a task to be executed."""
 

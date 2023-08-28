@@ -13,8 +13,6 @@
       "source.fixAll": true
     },
     // editor
-    "editor.wordBasedSuggestions": false,
-    "editor.tabSize": 4,
     "editor.rulers": [
       { // PEP8 documentation
         "column": 72,
@@ -32,19 +30,17 @@
         "color": "#ff0000"
       }
     ],
-    "editor.suggest.showSnippets": true,
-    "diffEditor.ignoreTrimWhitespace": false,
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.acceptSuggestionOnEnter": "on",
-    "editor.acceptSuggestionOnCommitCharacter": false
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "files.trimTrailingWhitespace": false
   },
-  "python.terminal.activateEnvInCurrentTerminal": true,
   "autoDocstring.includeExtendedSummary": true,
   "autoDocstring.quoteStyle": "\"\"\"",
+  "python.terminal.activateEnvInCurrentTerminal": true,
   //
   //
   //
-  // Linting / Formatting / Type Checking / Testing
+  // Formatting / Linting / Type Checking
   //
   //
   //
@@ -66,19 +62,6 @@
     //"reportMissingTypeStubs": "error" // https://github.com/microsoft/pyright/blob/main/docs/type-stubs.md#generating-type-stubs-in-vs-code
   },
   //
-  // - inlayHints
-  //
-  "python.analysis.inlayHints.callArgumentNames": false,
-  "python.analysis.inlayHints.variableTypes": false,
-  "python.analysis.inlayHints.functionReturnTypes": false,
-  "python.analysis.inlayHints.pytestParameters": false,
-  //
-  // - tests / debug
-  //
-  "python.testing.pytestEnabled": false,
-  "python.testing.unittestEnabled": false,
-  "testExplorer.showOnRun": true,
-  //
   //
   //
   // EDITOR
@@ -91,21 +74,17 @@
   "editor.formatOnType": true,
   "editor.suggest.insertMode": "replace",
   "editor.inlineSuggest.enabled": true,
-  "editor.tabSize": 4,
   "editor.insertSpaces": true,
   "editor.detectIndentation": true,
-  "editor.acceptSuggestionOnCommitCharacter": true,
-  "editor.acceptSuggestionOnEnter": "smart",
   "editor.linkedEditing": true,
-  "editor.lightbulb.enabled": true,
   "editor.suggest.showWords": false,
-  "editor.pasteAs.enabled": true,
   "editor.occurrencesHighlight": true,
+  "editor.acceptSuggestionOnEnter": "smart",
   //
   // - font / writing style
   //
   "editor.fontFamily": "'Jetbrains Mono', 'Consolas', 'Courier New', monospace",
-  "editor.fontLigatures": false,
+  "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.lineHeight": 24,
   "editor.matchBrackets": "always",
@@ -118,10 +97,9 @@
   //
   // - minimap
   //
+  "editor.minimap.enabled": true,
   "editor.minimap.size": "fill",
-  "editor.minimap.enabled": false,
   "editor.minimap.autohide": true,
-  "editor.minimap.renderCharacters": true,
   //
   // - problems / errors / warnings / infos
   //
@@ -145,23 +123,21 @@
   //
   //
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
+  "files.autoSaveDelay": 1000, // autosave after 1 second
   "files.trimTrailingWhitespace": true,
   "files.readonlyInclude": {
-    "**/node_modules/**": true,
     "**/.venv/**": true
   },
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
+    "**/.git": true, // git
+    "**/.svn": true, // subversion
+    "**/.hg": true, // mercurial
+    "**/CVS": true, // Concurrent Versions System
+    "**/.DS_Store": true, // macOS
+    "**/Thumbs.db": true, // Windows
     "**/__pycache__": true,
     "**/.pytest_cache": true,
     "**/.mypy_cache": true,
-    "**/indent.log": true,
     "**/.tox/**": true
   },
   //
@@ -190,7 +166,7 @@
   "terminal.integrated.shellIntegration.suggestEnabled": true,
   "terminal.integrated.unicodeVersion": "11",
   "terminal.integrated.enableImages": true,
-  "terminal.integrated.fontFamily": "'MesloLGS NF', 'Consolas', 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'MesloLGS NF', 'Cascadia Code', 'Consolas', 'Courier New', monospace",
   //
   //
   //
@@ -200,7 +176,7 @@
   //
   "better-comments.multilineComments": true,
   "better-comments.highlightPlainText": true,
-  "todo-tree.highlights.enabled": false,
+  "todo-tree.highlights.enabled": false, // already done by better comments
   "todo-tree.general.statusBar": "top three",
   "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
   "todo-tree.filtering.ignoreGitSubmodules": true,
@@ -247,8 +223,14 @@
       "rules": {
         // see https://github.com/Binaryify/OneDark-Pro#python--pylance-users for more rules
         "*.typeHint:python": "#8c8c8c",
-        "*.typeHintComment:python": "#8c8c8c",
         "*.async:python": "#eb78ff",
+        "comment": {
+          "italic": true
+        },
+        "*.typeHintComment:python": {
+          "foreground": "#8c8c8c",
+          "italic": false
+        },
         "parameter:python": {
           "italic": true
         },
@@ -268,9 +250,7 @@
   //
   //
   //
-  "git.autofetch": true,
   "git.enableSmartCommit": true,
-  "git.confirmSync": true,
   //
   //
   //
