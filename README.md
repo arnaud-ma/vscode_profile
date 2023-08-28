@@ -12,7 +12,21 @@ A python profile with a lot of settings and a full theme already configured. The
 
 1. Paste the link: https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/Python.code-profile
 
-If you want to get the ligatures, you can install the [Jetbrains mono font](https://github.com/JetBrains/JetBrainsMono#installation)
+If you want to have the ligatures, you can install the [Jetbrains mono font](https://github.com/JetBrains/JetBrainsMono#installation)
+
+## Configuration
+
+### Settings
+
+The settings are configured in the [`settings.json`](profile/settings.json) file. You can read the file to see the settings that are already configured.
+To modify your own settings, you can navigate to **File > Preferences > Settings** and search for the setting you want to change.
+
+Click on the little icon on the right (Open Settings (JSON)) if you want to directly modify your own `settings.json` file.
+
+For example, if you want to change the font, you can either:
+ - search "font" in the settings and change the font family
+ - change the `editor.fontFamily` setting in the `settings.json` file. It should be located in the font / writing style section.
+
 
 ### Ruff / black configuration
 

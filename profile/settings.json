@@ -105,7 +105,7 @@
   // - font / writing style
   //
   "editor.fontFamily": "'Jetbrains Mono', 'Consolas', 'Courier New', monospace",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.fontSize": 14,
   "editor.lineHeight": 24,
   "editor.matchBrackets": "always",

@@ -19,10 +19,10 @@ def create_dict(name: str) -> dict[str, str | dict]:
     d: dict[str, str | dict] = {"name": name}
 
     with (
-        open("settings.json") as f_settings,
-        open("keybindings.json") as f_keybindings,
-        open("python.json") as f_snippets,
-        open("extensions.json") as f_extensions,
+        open("profile/settings.json") as f_settings,
+        open("profile/keybindings.json") as f_keybindings,
+        open("profile/snippets/python.json") as f_snippets,
+        open("profile/extensions.json") as f_extensions,
     ):
         d["settings"] = json.dumps({"settings": f_settings.read()})
         d["keybindings"] = json.dumps(
@@ -36,7 +36,7 @@ def create_dict(name: str) -> dict[str, str | dict]:
 
 def main():
     d = create_dict(NAME)
-    with open(f"{NAME}.code-profile", "w") as f:
+    with open(f"profile/{NAME}.code-profile", "w") as f:
         json.dump(d, f)
 
 
