@@ -129,7 +129,7 @@
     "**/.venv/**": true
   },
   "files.exclude": {
-    "**/.git": true, // git
+    "**/.git": true,
     "**/.svn": true, // subversion
     "**/.hg": true, // mercurial
     "**/CVS": true, // Concurrent Versions System
