@@ -30,6 +30,7 @@ class SimpleTask(Task):
         await asyncio.sleep(1)
         self.completed = True
         # this simple example just print something, nothing else
+        # TODO create something that is really useful
         print(f"Completed task: {self.description}")
 
 

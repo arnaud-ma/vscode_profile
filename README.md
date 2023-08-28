@@ -10,9 +10,9 @@ A python profile with a lot of settings and a full theme already configured. The
 1. Navigate to: **File > Preferences > Profiles > Import Profile...**
 ![find the Import Profile setting](doc/image.png)
 
-1. Paste the link: https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/Python.code-profile
+1. Paste the link: https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profile/Python.code-profile
 
-If you want to have the ligatures, you can install the [Jetbrains mono font](https://github.com/JetBrains/JetBrainsMono#installation)
+It is recommended to install the [Jetbrains mono font](https://github.com/JetBrains/JetBrainsMono#installation)
 
 ## Configuration
 
@@ -27,6 +27,7 @@ For example, if you want to change the font, you can either:
  - search "font" in the settings and change the font family
  - change the `editor.fontFamily` setting in the `settings.json` file. It should be located in the font / writing style section.
 
+Ligatures are disabled by default. To enable them, search for "ligature" in the settings then change the `editor.fontLigatures` setting to `true`.
 
 ### Ruff / black configuration
 
@@ -138,12 +139,15 @@ reportUnusedFunction = false
 
 - `Python` - Python extension for Visual Studio Code.
 - `Pylance` - Fast, feature-rich language support for Python, including the pyright static type checker.
+- `Python environement manager` - Browse and manage all of your Python environments & packages from a single place.
 - `Black formatter` -  Support for the [Black](https://github.com/psf/black) formatter.
 - `Ruff` - Support for the [Ruff](https://beta.ruff.rs/docs/) linter.
+- `Python indent` - Correct python indentation in VS Code.
 - `autoDocstring` - Automatically generates docstrings.
 - `Even Better TOML` - TOML file support, for project config setup files like `pyproject.toml`.
+- `Todo Tree` - Searches your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the activity bar.
+- `Better Comments` - Create more human-friendly comments in your code.
 - `Code Spell Checker` - A basic spell checker that works well with code and documents.
-- `Python indent` - Correct python indentation in VS Code.
 - `One Dark Pro` - Atom's iconic One Dark theme.
 
 ## Theme
@@ -163,7 +167,7 @@ For even more customization, you can add (only need to install in VS Code) :
 
 ## Settings
 
-You can read the `settings.json` file to see the settings that are already configured.
+You can read the [`settings.json`](profile/settings.json) file to see the settings that are already configured.
 
 ## Key bindings
 
