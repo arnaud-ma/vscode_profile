@@ -12,7 +12,13 @@ A python profile with a lot of settings and a full theme already configured. The
 
 1. Paste the link: https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profile/Python.code-profile
 
-It is recommended to install the [Jetbrains mono font](https://github.com/JetBrains/JetBrainsMono#installation)
+It is recommended to install the [Jetbrains mono font](https://github.com/JetBrains/JetBrainsMono#installation).
+
+For even more customization, you can add (only need to install in VS Code) :
+
+- a file icon theme like [Material icon theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- a product icon theme like [Fluent icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
+
 
 ## Configuration
 
@@ -139,14 +145,14 @@ reportUnusedFunction = false
 
 - `Python` - Python extension for Visual Studio Code.
 - `Pylance` - Fast, feature-rich language support for Python, including the pyright static type checker.
-- `Python environement manager` - Browse and manage all of your Python environments & packages from a single place.
+- `Python environment manager` - Browse and manage all of your Python environments & packages from a single place.
 - `Black formatter` -  Support for the [Black](https://github.com/psf/black) formatter.
 - `Ruff` - Support for the [Ruff](https://beta.ruff.rs/docs/) linter.
 - `Python indent` - Correct python indentation in VS Code.
 - `autoDocstring` - Automatically generates docstrings.
 - `Even Better TOML` - TOML file support, for project config setup files like `pyproject.toml`.
 - `Todo Tree` - Searches your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the activity bar.
-- `Better Comments` - Create more human-friendly comments in your code.
+- `Better Comments` - Comment highlighting.
 - `Code Spell Checker` - A basic spell checker that works well with code and documents.
 - `One Dark Pro` - Atom's iconic One Dark theme.
 
@@ -154,7 +160,6 @@ reportUnusedFunction = false
 
 The theme used is `One Dark Pro`. Some features are added in the `settings.json` file :
 
-- The JetBrains mono font is used if installed, with ligatures
 - Module import are bolded
 - Abstract methods are bolded
 - Everything related to annotation is of a different color (close to the comments one)
@@ -164,10 +169,6 @@ For even more customization, you can add (only need to install in VS Code) :
 
 - a file icon theme like [Material icon theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - a product icon theme like [Fluent icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
-
-## Settings
-
-You can read the [`settings.json`](profile/settings.json) file to see the settings that are already configured.
 
 ## Key bindings
 
