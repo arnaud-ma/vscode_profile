@@ -26,12 +26,11 @@ class TaskManager:
         await asyncio.gather(*[task.execute() for task in self.tasks])
 
 
-class SimpleTask(Task):
+class SimpleTask(Task):  # this simple example just print something, nothing else
     async def execute(self):
         await asyncio.sleep(1)
         self.completed = True
-        # this simple example just print something, nothing else
-        # TODO create something that is really useful
+        # TODO create something that is really useful instead
         print(f"Completed task: {self.description}")
 
 

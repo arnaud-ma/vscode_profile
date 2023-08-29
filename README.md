@@ -1,6 +1,7 @@
 # VS Code Python Profile with complete settings
 A python profile with a lot of settings and a full theme already configured. The theme used is `One Dark Pro` with some additional features.
 
+[Screenshot](#screenshot) | [Installation](#installation) | [Configuration](#configuration) | [Extensions](#extensions) | [Theme](#theme) | [Key bindings](#key-bindings)
 
 ## Screenshot
 
