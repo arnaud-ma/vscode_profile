@@ -1,4 +1,5 @@
 name: build Python.code-profile
+# Execute the build_profile.py script and commit the changes
 
 on:
   workflow_dispatch:
