@@ -6,6 +6,7 @@ A python profile with a lot of settings and a full theme already configured. The
 ## Screenshot
 
 ![code screenshot](doc/code_screenshot.png)
+
 ## Installation
 
 1. Navigate to: **File > Preferences > Profiles > Import Profile...**
@@ -165,11 +166,6 @@ The theme used is `One Dark Pro`. Some features are added in the `settings.json`
 - Abstract methods are bolded
 - Everything related to annotation is of a different color (close to the comments one)
 - async function are of a different color
-
-For even more customization, you can add (only need to install in VS Code) :
-
-- a file icon theme like [Material icon theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-- a product icon theme like [Fluent icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
 
 ## Key bindings
 
