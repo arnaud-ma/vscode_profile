@@ -10,7 +10,7 @@ A python profile with a lot of settings and a full theme already configured. The
 1. Navigate to: **File > Preferences > Profiles > Import Profile...**
 ![find the Import Profile setting](doc/image.png)
 
-1. Paste the link: https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profile/Python.code-profile
+2. Paste the link: https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profile/Python.code-profile
 
 It is recommended to install the [Jetbrains mono font](https://github.com/JetBrains/JetBrainsMono#installation).
 

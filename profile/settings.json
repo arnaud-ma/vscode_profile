@@ -251,6 +251,8 @@
   //
   //
   "git.enableSmartCommit": true,
+  "git.autofetch": false,
+  "git.confirmSync": false,
   //
   //
   //
