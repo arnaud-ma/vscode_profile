@@ -8,8 +8,8 @@ Copy the link of the profile you want to use (see the list below) and paste it i
 
 # List of profiles
 
-By clicking on the profile name, you will be redirected to the profile's README.md file. There you will find
-a presentation of the profile (theme used, extensions installed, etc.) and some recommendations specific to the profile.
+By clicking on the profile name, you will be redirected to the profile's markdown file. There you will find
+an overview of the profile (theme used, extensions installed, etc.) and some recommendations specific to the profile.
 
 | Profile                       | Installation link                                                                           |
 | ----------------------------------- | ------------------------------------------------------------------------------------------- |
