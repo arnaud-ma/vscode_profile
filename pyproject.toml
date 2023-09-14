@@ -40,14 +40,19 @@ ignore = [
 
 exclude = [
     ".bzr",
+    ".cache",
+    ".coverage",
+    ".coverage.*",
     ".direnv",
     ".eggs",
     ".git",
     ".git-rewrite",
+    "hypothesis",
     ".hg",
     ".mypy_cache",
     ".nox",
     ".pants.d",
+    ".pytest_cache",
     ".pytype",
     ".ruff_cache",
     ".svn",
@@ -62,22 +67,18 @@ exclude = [
     "venv",
 ]
 
-# exclude some rules in the __init__.py files
+
 [tool.ruff.extend-per-file-ignores]
-"__init__.py" = ["F401"] # unused import
+"__init__.py" = ["F401"] # allow unused imports in the __init__.py files
 
 [tool.ruff.pydocstyle]
-# https://beta.ruff.rs/docs/settings/#pydocstyle-convention
-convention = "google"
+convention = "google" # https://beta.ruff.rs/docs/settings/#pydocstyle-convention
 
 [tool.ruff.flake8-quotes]
 inline-quotes = "double"
 multiline-quotes = "double"
 docstring-quotes = "double"
 
-
-[tool.ruff.pylint]
-max-args = 5
 
 [tool.pyright]
 # pyright is only used for type checking, ruff does all the linting

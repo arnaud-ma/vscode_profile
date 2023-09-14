@@ -7,12 +7,16 @@
   //
   //
   "[python]": {
+    //
     // ruff formatter, see https://github.com/astral-sh/ruff-vscode#example-configurations
+    //
     "editor.codeActionsOnSave": {
       "source.organizeImports": true,
       "source.fixAll": true
     },
+    //
     // editor
+    //
     "editor.rulers": [
       { // PEP8 documentation
         "column": 72,
@@ -34,8 +38,6 @@
     "editor.acceptSuggestionOnCommitCharacter": false,
     "files.trimTrailingWhitespace": false
   },
-  "autoDocstring.includeExtendedSummary": true,
-  "autoDocstring.quoteStyle": "\"\"\"",
   "python.terminal.activateEnvInCurrentTerminal": true,
   //
   //
@@ -44,9 +46,6 @@
   //
   //
   //
-  "black-formatter.args": [
-    "--line-length=88"
-  ],
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoFormatStrings": true,
@@ -54,18 +53,31 @@
   "python.analysis.autoImportCompletions": true,
   "python.analysis.useLibraryCodeForTypes": true,
   "python.analysis.completeFunctionParens": false,
-  "python.analysis.diagnosticMode": "openFilesOnly",
   //
   // - errors
   //
   "python.analysis.diagnosticSeverityOverrides": {
-    //"reportMissingTypeStubs": "error" // https://github.com/microsoft/pyright/blob/main/docs/type-stubs.md#generating-type-stubs-in-vs-code
+    //"reportMissingTypeStubs": "information" // https://github.com/microsoft/pyright/blob/main/docs/type-stubs.md#generating-type-stubs-in-vs-code
   },
   //
   //
   //
   // EDITOR
   //
+  //
+  // - font / writing style
+  //
+  "editor.fontFamily": "'Jetbrains Mono', 'Consolas', 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.matchBrackets": "always",
+  "editor.renderWhitespace": "trailing",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.mouseWheelZoom": true,
   //
   // - auto-completion / formatting / linting / highlighting
   //
@@ -81,31 +93,11 @@
   "editor.occurrencesHighlight": true,
   "editor.acceptSuggestionOnEnter": "smart",
   //
-  // - font / writing style
-  //
-  "editor.fontFamily": "'Jetbrains Mono', 'Consolas', 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 14,
-  "editor.lineHeight": 24,
-  "editor.matchBrackets": "always",
-  "editor.renderWhitespace": "trailing",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.guides.highlightActiveBracketPair": true,
-  "editor.guides.highlightActiveIndentation": true,
-  "editor.mouseWheelZoom": true,
-  //
   // - minimap
   //
   "editor.minimap.enabled": true,
   "editor.minimap.size": "fill",
   "editor.minimap.autohide": true,
-  //
-  // - problems / errors / warnings / infos
-  //
-  "problems.decorations.enabled": true,
-  "problems.showCurrentInStatus": false,
-  "problems.autoReveal": false,
   //
   //
   //
@@ -123,22 +115,24 @@
   //
   //
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000, // autosave after 1 second
+  "files.autoSaveDelay": 1000, // in ms
   "files.trimTrailingWhitespace": true,
   "files.readonlyInclude": {
-    "**/.venv/**": true
+    "**/.venv/**": true,
+    "**/venv/**": true
   },
   "files.exclude": {
     "**/.git": true,
-    "**/.svn": true, // subversion
-    "**/.hg": true, // mercurial
-    "**/CVS": true, // Concurrent Versions System
-    "**/.DS_Store": true, // macOS
-    "**/Thumbs.db": true, // Windows
     "**/__pycache__": true,
-    "**/.pytest_cache": true,
+    "**/.cache": true,
+    "**/.coverage": true,
+    "**/.coverage.*": true,
+    "**/.hypothesis": true,
     "**/.mypy_cache": true,
-    "**/.tox/**": true
+    "**/.nox": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.tox": true
   },
   //
   //
@@ -147,11 +141,8 @@
   //
   //
   //
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
   "explorer.autoReveal": false,
   "explorer.copyRelativePathSeparator": "/",
-  "search.useIgnoreFiles": true,
   //
   //
   //
@@ -251,8 +242,6 @@
   //
   //
   "git.enableSmartCommit": true,
-  "git.autofetch": false,
-  "git.confirmSync": false,
   //
   //
   //
@@ -263,50 +252,5 @@
   "[markdown]": {
     "editor.defaultFormatter": "vscode.markdown-language-features"
   },
-  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
-  "markdown.preview.scrollPreviewWithEditor": false,
-  "markdown.preview.scrollEditorWithPreview": false,
-  //
-  //
-  //
-  // CSpell
-  //
-  //
-  //
-  "cSpell.language": "en-GB,en-US,en",
-  "cSpell.languageSettings": [
-    {
-      "languageId": "python",
-      "allowCompoundWords": true,
-      "dictionaries": [
-        "python",
-        "fonts"
-      ]
-    }
-  ],
-  // Custom dict instead of every word in the cSpell.userWords
-  // "cSpell.customDictionaries": {
-  //   "my_dict": {
-  //     "name": "my_dict",
-  //     "path": "absolute_path_to_my_dict.txt",
-  //     "noSuggest": false,
-  //     "description": "My custom dictionary",
-  //     "addWords": true,
-  //   },
-  //   "custom": true,
-  //   "internal-terms": false,
-  // },
-  "cSpell.userWords": [
-    "autofetch",
-    "autohide",
-    "Consolas",
-    "Jetbrains",
-    "Meslo",
-    "mypy",
-    "Parens",
-    "pycache",
-    "Pylance",
-    "pytest",
-    "venv"
-  ]
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart"
 }
