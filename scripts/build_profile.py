@@ -43,12 +43,11 @@ from pathlib import Path
 """The directory that contains the profile directories."""
 DIRECTORY = Path("profiles")
 
-"""The names of the profile directories to generate .code-profile files for."""
-PROFILE_NAMES = ("python",)
 
 @dataclass
 class Profile:
-    """A Profile object that represent a directory with the following structure:
+    """A Profile object that represent a directory with the following
+    structure:
     ```
     snippet/
         snippet1.json
@@ -58,9 +57,9 @@ class Profile:
     settings.json
     ```
 
-    There can be more files or missing files in the directory, but the files
-    listed above are the only ones that will be dumped into the .code-profile file
-    (if they exist)
+    There can be more files or missing files in the directory,
+    but the files listed above are the only ones that will be dumped
+    into the .code-profile file (if they exist).
 
     Args:
         path (str | PathLike[str]): The path to the profile directory.
@@ -75,7 +74,7 @@ class Profile:
     Example:
     ```python
         >>> profile = Profile("path/to/a_python_profile")
-        >>> profile.write("Python")
+        >>> profile.write("python")
     ```
     """
 
@@ -124,8 +123,9 @@ class Profile:
         not_dumped = {"settings": settings.read_text(encoding="utf8")}
         return json.dumps(not_dumped)
 
-    def create_code_profile_dict(self, name: str) -> dict[str, str | dict]:
-        """Create a dictionary that correspond to the .code-profile file format:
+    def create_code_profile_dict(self, name: str | None = None):
+        """Create a dictionary that correspond to the .code-profile
+        file format:
 
         ```json
         {
@@ -146,7 +146,11 @@ class Profile:
           "extensions": "extensions.json contents"
         }
         ```
+        If name is None, the name of the profile directory will be used.
         """
+        if name is None:
+            name = self.path.name
+
         d: dict[str, str | dict] = {"name": name}
         for file in ("settings", "keybindings", "snippets", "extensions"):
             dumped = getattr(self, f"dump_{file}")()
@@ -156,7 +160,7 @@ class Profile:
             warnings.warn(f"Profile {name!r} is empty", RuntimeWarning, stacklevel=2)
         return d
 
-    def write_code_profile(self, name: str):
+    def write_code_profile(self, name: str | None = None):
         """Write the .code-profile file into the profile directory."""
         d = self.create_code_profile_dict(name)
         with open(self.path / f"{name}.code-profile", "w") as f:
@@ -164,9 +168,13 @@ class Profile:
 
 
 def main():
-    for name in PROFILE_NAMES:
+
+    with open("profiles.json") as f:
+        profile_names: list[str] = json.load(f)
+
+    for name in profile_names:
         profile = Profile(DIRECTORY / name)
-        profile.write_code_profile(name)
+        profile.write_code_profile()
 
 
 if __name__ == "__main__":

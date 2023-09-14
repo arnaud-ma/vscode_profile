@@ -5,10 +5,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'settings.json'
-      - 'keybindings.json'
-      - 'python.json'
-      - 'extensions.json'
+      - '**/settings.json'
+      - '**/keybindings.json'
+      - '**/python.json'
+      - '**/extensions.json'
       - 'scripts/build_profile.py'
 
 
