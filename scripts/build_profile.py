@@ -162,6 +162,10 @@ class Profile:
 
     def write_code_profile(self, name: str | None = None):
         """Write the .code-profile file into the profile directory."""
+
+        if name is None:
+            name = self.path.name
+
         d = self.create_code_profile_dict(name)
         with open(self.path / f"{name}.code-profile", "w") as f:
             json.dump(d, f)
