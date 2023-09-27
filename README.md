@@ -13,7 +13,7 @@ an overview of the profile (theme used, extensions installed, etc.) and some rec
 
 | Profile                       | Installation link                                                                           |
 | ----------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Python](profiles/python/README.md) | https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profiles/python/Python.code-profile |
+| [Python](profiles/python/python.md) | https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profiles/python/Python.code-profile |
 
 
 # Configuration
