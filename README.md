@@ -3,8 +3,9 @@ Some Visual Studio Code profiles, easily usable and editable.
 # Installation
 
 Copy the link of the profile you want to use (see the list below) and paste it in the **File > Preferences > Profiles > Import Profile...** setting.
-
 ![find the Import Profile setting](doc/image.png)
+
+Read [the official documentation](https://code.visualstudio.com/docs/editor/profiles) of vscode profiles for more details.
 
 # List of profiles
 
