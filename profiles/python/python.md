@@ -15,7 +15,7 @@ Ligatures are disabled by default. To enable them, search for "ligature" in the 
 
 It is not recommended putting any settings for black and ruff (or any other formatter/linter/type checker) in a settings.json file, because it will always override settings that are put in a `pyproject.toml` file in the workspace (which is the recommended way to configure those tools for any project, even without vscode).
 
-Instead, you should put the settings in a `pyproject.toml` file at the root of your project / workspace. Here is an example of a `pyproject.toml` file that i use :
+Instead, you should put the settings in a `pyproject.toml` file at the root of your project / workspace. Here is an example of a `pyproject.toml` template file:
 
 <details>
 <summary>pyproject.toml</summary>
