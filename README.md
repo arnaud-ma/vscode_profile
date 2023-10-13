@@ -1,5 +1,7 @@
 Some Visual Studio Code profiles, easily usable and editable.
 
+Vscode already has some profile templates (which you can see [here](https://code.visualstudio.com/docs/editor/profiles#_python-profile-template) but they are quite limited in the sense that they aim to be as generic as possible. The goal of this repository is to have a bank of more specific (but well-documented) profiles, as long as they would be useful to a significant number of people. The contents of these profiles are in the `profiles` folder and you can easily see what each one contains (unlike the raw .profile file).
+
 # Installation
 
 Copy the link of the profile you want to use (see the list below) and paste it in the **File > Preferences > Profiles > Import Profile...** setting.
