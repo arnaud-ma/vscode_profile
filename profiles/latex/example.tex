@@ -1,0 +1,61 @@
+\documentclass{article}
+
+\usepackage{amsmath} % for matrices
+\usepackage{booktabs} % for tables
+\usepackage{lua-ul}
+
+% for the mathbb font
+% \usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+\renewcommand{\emptyset}{\text{\O}}
+
+\begin{document}
+
+\section{Introduction}
+
+This is a simple LaTeX file compiled with latexmk and vscode that includes a table and a matrix.
+
+\section{Table}
+
+\[
+  \bigsqcup_{i=1}^{\infty} \coprod_{n=1}^{\infty} 
+\]
+
+Here's a simple table:
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{ccc}
+    \toprule
+    Column 1 & Column 2 & Column 3 \\
+    \midrule
+    1        & 2        & 3        \\
+    4        & 5        & 6        \\
+    7        & 8        & 9        \\
+    \bottomrule
+  \end{tabular}
+  \caption{A simple table.}\label{tab:simple-table}
+\end{table}
+\section{Matrix}
+
+\begin{equation}
+  3+3 = 4
+\end{equation}
+\begin{align*}
+  3+3 = 6 \\
+  3+4 = 7 \\
+\end{align*}
+
+Here's a \underLine{simple matrix}:
+
+\begin{equation}
+  \begin{pmatrix}
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9
+  \end{pmatrix}
+\end{equation}
+
+\end{document}
