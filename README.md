@@ -49,4 +49,4 @@ You can refer to the profiles already there in the `profiles` folder.
 5. Test that your profile works:
    - Execute the `scripts/build_profiles.py` script
    - Import your profile in VS Code with the .code-profile generated in the folder of your profile
-6. Add your profile to the list in the `README.md` file at the root of the repository. The link should be `https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profiles/<profile_name>/<profile_name>.code-profile`
+6. Add your profile to the list in the `README.md` file at the root of the repository.
