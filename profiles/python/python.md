@@ -105,8 +105,8 @@ max-args = 5
 [tool.pyright]
 # deactivate pyright features that are already covered by ruff
 # actually only enables type checking
+# https://microsoft.github.io/pyright/#/configuration?id=diagnostic-rule-defaults for more info
 typeCheckingMode = "basic"
-stubPath = "typings"
 reportGeneralTypeIssues = true
 reportMissingTypeStubs = false
 reportUndefinedVariable = false

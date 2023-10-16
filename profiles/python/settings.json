@@ -47,7 +47,7 @@
   //
   //
   "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.typeCheckingMode": "basic", // the same setting in the pyproject.toml file overrides this if set
   "python.analysis.autoFormatStrings": true,
   "python.analysis.gotoDefinitionInStringLiteral": true,
   "python.analysis.autoImportCompletions": true,
@@ -150,14 +150,13 @@
   //
   //
   //
-  "terminal.integrated.scrollback": 100000,
+  "terminal.integrated.scrollback": 10000,
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.shellIntegration.suggestEnabled": true,
   "terminal.integrated.unicodeVersion": "11",
   "terminal.integrated.enableImages": true,
-  "terminal.integrated.fontFamily": "'MesloLGS NF', 'Cascadia Code', 'Consolas', 'Courier New', monospace",
   //
   //
   //
