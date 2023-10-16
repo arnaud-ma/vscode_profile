@@ -16,8 +16,8 @@ an overview of the profile (theme used, extensions installed, etc.) and some rec
 
 | Profile                       | Installation link                                                                           |
 | ----------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Python](profiles/python/python.md) | <https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profiles/python/python.code-profile> |
-| [Latex](profiles/python/latex.md)   | <https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profiles/latex/latex.code-profile> |
+| [Python](profiles/python/python.md) | [python.code_profile](profiles/python/python.code-profile?raw=1) |
+| [Latex](profiles/python/latex.md)   | [latex.code_profile](profiles/python/latex.code-profile?raw=1) |
 
 # Configuration
 
