@@ -1,0 +1,46 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  // LATEX WORKSHOP
+  {
+    "key": "ctrl+l ctrl+v",
+    "command": "latex-workshop.view",
+    "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "latex-workshop.build",
+    "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "latex-workshop.clean",
+    "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+  },
+  // CONCEAL
+  {
+    "key": "alt+p e",
+    "command": "conceal.togglePrettySymbols"
+  },
+  {
+    "key": "alt+p alt+c",
+    "command": "conceal.copyWithSubstitutions"
+  },
+  // CSPELL
+  {
+    "key": "alt+d",
+    "command": "cSpell.addWordToDictionary"
+  },
+  {
+    "key": "ctrl+alt+d",
+    "command": "cSpell.addIssuesToDictionary"
+  }
+]

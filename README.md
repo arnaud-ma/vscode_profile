@@ -16,8 +16,8 @@ an overview of the profile (theme used, extensions installed, etc.) and some rec
 
 | Profile                       | Installation link                                                                           |
 | ----------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Python](profiles/python/python.md) | https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profiles/python/python.code-profile |
-
+| [Python](profiles/python/python.md) | <https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profiles/python/python.code-profile> |
+| [Latex](profiles/python/latex.md)   | <https://raw.githubusercontent.com/arnaud-ma/vscode_profile/main/profiles/latex/latex.code-profile> |
 
 # Configuration
 
@@ -27,8 +27,9 @@ To modify your own settings, you can navigate to **File > Preferences > Settings
 Click on the little icon on the right (Open Settings (JSON)) if you want to directly modify your own `settings.json` file.
 
 For example, if you want to change the font, you can either:
- - search "font" in the settings and change the font family
- - change or add the `editor.fontFamily` setting in the `settings.json` file.
+
+- search "font" in the settings and change the font family
+- change or add the `editor.fontFamily` setting in the `settings.json` file.
 
 This is exactly the same for the keybindings. You can navigate to **File > Preferences > Keyboard Shortcuts** and search for the keybinding you want to change.
 
@@ -37,7 +38,7 @@ This is exactly the same for the keybindings. You can navigate to **File > Prefe
 Feel free to contribute by creating a pull request or an issue. You can suggest a profile or something to add to an existing profile
 that would be useful to everyone (not something specific to your own use case) by creating an issue or a pull request.
 
-### Create a new profile
+## Create a new profile
 
 You can refer to the profiles already there in the `profiles` folder.
 
