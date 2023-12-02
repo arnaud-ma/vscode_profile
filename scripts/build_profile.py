@@ -177,9 +177,8 @@ def main():
         profile_names: list[str] = json.load(f)
 
     for name in profile_names:
-        profile = Profile(DIRECTORY / name.replace(" ", "_").lower())
-        profile.write_code_profile(name)
-
+        path = DIRECTORY / name.lower().replace(" ", "_")
+        Profile(path).write_code_profile(name)
 
 if __name__ == "__main__":
     main()
