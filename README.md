@@ -11,24 +11,24 @@ as long as they would be useful to a significant number of people.
 The contents of these profiles are in the `profiles` folder and
 you can easily see what each one contains.
 
-# Installation
+## Installation
 
 Copy the link of the profile you want to use (see the list below) and paste it in the **File > Preferences > Profiles > Import Profile...** setting.
 ![find the Import Profile setting](doc/image.png)
 
 Read [the official documentation](https://code.visualstudio.com/docs/editor/profiles) of vscode profiles for more details.
 
-# List of profiles
+## List of profiles
 
 By clicking on the profile name, you will be redirected to the profile's documentation file. There you will find
 an overview of the profile (theme used, extensions installed, etc.) and some recommendations specific to the profile.
 
-| Profile                             | Installation link                                                |
+| Profile                             | Download link                                                |
 | ----------------------------------- | ---------------------------------------------------------------- |
 | [Python](profiles/python/python.md) | [python.code_profile](profiles/python/python.code-profile?raw=1) |
 | [Latex](profiles/latex/latex.md)    | [latex.code_profile](profiles/latex/latex.code-profile?raw=1)    |
 
-# Configuration
+## Configuration
 
 The settings are configured in the `settings.json` file of each profile. You can read the file to see the settings that are already configured.
 
@@ -42,12 +42,12 @@ For example, if you want to change the font, you can either:
 
 This is exactly the same for the keybindings. You can navigate to **File > Preferences > Keyboard Shortcuts** and search for the keybinding you want to change.
 
-# Contributing
+## Contributing
 
 Feel free to contribute by creating a pull request or an issue. You can suggest a profile or something to add to an existing profile
 that would be useful to everyone (not something specific to your own use case) by creating an issue or a pull request.
 
-## Create a new profile
+### Create a new profile
 
 You can refer to the profiles already there in the `profiles` folder.
 
