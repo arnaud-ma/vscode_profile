@@ -23,10 +23,10 @@ Read [the official documentation](https://code.visualstudio.com/docs/editor/prof
 By clicking on the profile name, you will be redirected to the profile's documentation file. There you will find
 an overview of the profile (theme used, extensions installed, etc.) and some recommendations specific to the profile.
 
-| Profile                       | Installation link                                                                           |
-| ----------------------------------- | ------------------------------------------------------------------------------------------- |
+| Profile                             | Installation link                                                |
+| ----------------------------------- | ---------------------------------------------------------------- |
 | [Python](profiles/python/python.md) | [python.code_profile](profiles/python/python.code-profile?raw=1) |
-| [Latex](profiles/latex/latex.md)   | [latex.code_profile](profiles/latex/latex.code-profile?raw=1) |
+| [Latex](profiles/latex/latex.md)    | [latex.code_profile](profiles/latex/latex.code-profile?raw=1)    |
 
 # Configuration
 
@@ -51,10 +51,10 @@ that would be useful to everyone (not something specific to your own use case) b
 
 You can refer to the profiles already there in the `profiles` folder.
 
-1. Create a folder in the `profiles` folder with the name of your profile (e.g. `python`).
-2. Create a markdown file in this folder with the same name of your profile (e.g. `python.md`) to present it, with the same structure as the other profiles.
+1. Create a folder in the 'profiles' folder with the name of your profile in lowercase, replacing spaces with underscores (e.g., 'python').
+2. Create a markdown file in this folder with the same name of your folder (e.g. `python.md`) to present it, with the same structure as the other profiles.
 3. Add your json files in this folder. You can copy this files from another profile and modify them.
-4. Add the name of your profile in the `profiles.json` file at the root of the repository.
+4. Add the name of your profile in the `profiles.json` (e.g. `Python`) file at the root of the repository.
 5. Test that your profile works:
    - Execute the `scripts/build_profiles.py` script
    - Import your profile in VS Code with the .code-profile generated in the folder of your profile
