@@ -1,6 +1,15 @@
 Some Visual Studio Code profiles, easily usable and editable.
 
-Vscode already has some profile templates (which you can see [here](https://code.visualstudio.com/docs/editor/profiles#_python-profile-template)) but they are quite limited in the sense that they aim to be as generic as possible. The goal of this repository is to have a bank of more specific (but well-documented) profiles, as long as they would be useful to a significant number of people. The contents of these profiles are in the `profiles` folder and you can easily see what each one contains (unlike the raw .profile file).
+I've been using vscode profiles for a few months now to have specific settings/themes for their own use.
+I felt the need to spend time organizing all of this in a repo, which is intended to be as simple as possible
+to add profiles while documenting them (instead of having a raw .code-profile file as vscode offers).
+
+Vscode already has some profile templates (which you can see [here](https://code.visualstudio.com/docs/editor/profiles#_python-profile-template))
+but they are quite limited in the sense that they aim to be as generic as possible.
+The main goal of this repository is to have a bank of more specific (but well-documented) profiles,
+as long as they would be useful to a significant number of people.
+The contents of these profiles are in the `profiles` folder and
+you can easily see what each one contains.
 
 # Installation
 
@@ -44,7 +53,7 @@ You can refer to the profiles already there in the `profiles` folder.
 
 1. Create a folder in the `profiles` folder with the name of your profile (e.g. `python`).
 2. Create a markdown file in this folder with the same name of your profile (e.g. `python.md`) to present it, with the same structure as the other profiles.
-3. Add you json files in this folder. You can copy this files from another profile and modify them.
+3. Add your json files in this folder. You can copy this files from another profile and modify them.
 4. Add the name of your profile in the `profiles.json` file at the root of the repository.
 5. Test that your profile works:
    - Execute the `scripts/build_profiles.py` script

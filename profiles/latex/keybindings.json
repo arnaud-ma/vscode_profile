@@ -1,14 +1,5 @@
 // Place your key bindings in this file to override the defaults
 [
-  {
-    "key": "ctrl+d",
-    "command": "editor.action.smartSelect.expand",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+k z",
-    "command": "workbench.action.toggleZenMode"
-  },
   // LATEX WORKSHOP
   {
     "key": "ctrl+l ctrl+v",
@@ -38,9 +29,5 @@
   {
     "key": "alt+d",
     "command": "cSpell.addWordToDictionary"
-  },
-  {
-    "key": "ctrl+alt+d",
-    "command": "cSpell.addIssuesToDictionary"
   }
 ]

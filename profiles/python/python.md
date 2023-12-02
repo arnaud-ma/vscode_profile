@@ -1,19 +1,20 @@
 # VS Code Python Profile with complete settings
+
 A python profile with useful settings and a full theme already configured. The theme used is `One Dark Pro` with some additional features.
 
 [Screenshot](#screenshot) | [Configuration](#configuration) | [Extensions](#extensions) | [Theme](#theme) | [Key bindings](#key-bindings)
 
 ## Screenshot
 
-![code screenshot](doc/code_screenshot.png)
+![python code screenshot](doc/code_screenshot.png)
 
 ## Configuration
 
 Ligatures are disabled by default. To enable them, search for "ligature" in the settings then change the `editor.fontLigatures` setting to `true`.
 
-#### Ruff / black settings
+### Ruff / black settings
 
-It is not recommended putting any settings for black and ruff (or any other formatter/linter/type checker) in a settings.json file, because it will always override settings that are put in a `pyproject.toml` file in the workspace (which is the recommended way to configure those tools for any project, even without vscode).
+It is not recommended putting any settings for black and ruff (or any other formatter/linter/type checker) in a `settings.json` file, because it will always override settings that are put in a `pyproject.toml` file in the workspace (which is the recommended way to configure those tools for any project, even without vscode).
 
 Instead, you should put the settings in a `pyproject.toml` file at the root of your project / workspace. Here is an example of a `pyproject.toml` template file:
 

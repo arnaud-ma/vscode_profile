@@ -166,7 +166,7 @@
   //
   "better-comments.multilineComments": true,
   "better-comments.highlightPlainText": true,
-  "todo-tree.highlights.enabled": false, // already done by better comments
+  "todo-tree.highlights.enabled": false, // already done with better comments
   "todo-tree.general.statusBar": "top three",
   "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
   "todo-tree.filtering.ignoreGitSubmodules": true,

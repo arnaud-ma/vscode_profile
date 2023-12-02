@@ -1,0 +1,11 @@
+[
+  {"identifier": {"id": "James-Yu.latex-workshop"}, "displayName": "LaTeX Workshop"},
+  {"identifier": {"id": "tecosaur.latex-utilities"}, "displayName": "LaTeX Utilities"},
+  {"identifier": {"id": "streetsidesoftware.code-spell-checker"}, "displayName": "Code Spell Checker"},
+  {"identifier": {"id": "valentjn.vscode-ltex"}, "displayName": "LTeX – LanguageTool grammar/spell checking"},
+  {"identifier": {"id": "BRBoer.vsc-conceal"}, "displayName": "Conceal"},
+  {"identifier": {"id": "draivin.hscopes"}, "displayName": "Hyperscopes"},
+  {"identifier": {"id": "draivin.hsnips"}, "displayName": "Hypersnips"},
+  {"identifier": {"id": "gruntfuggly.todo-tree"}, "displayName": "Todo Tree"},
+  {"identifier": {"id": "aaron-bond.better-comments"}, "displayName": "Better Comments"}
+]
