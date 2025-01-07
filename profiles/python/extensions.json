@@ -2,7 +2,6 @@
   {"identifier": {"id": "ms-python.python"}, "displayName": "Python"},
   {"identifier": {"id": "ms-python.vscode-pylance"}, "displayName": "Pylance"},
   {"identifier": {"id": "donjayamanne.python-environment-manager"}, "displayName": "Python Environment Manager"},
-  {"identifier": {"id": "ms-python.black-formatter"}, "displayName": "Black Formatter"},
   {"identifier": {"id": "charliermarsh.ruff"}, "displayName": "Ruff"},
   {"identifier": {"id": "kevinrose.vsc-python-indent"}, "displayName": "Python Indent"},
   {"identifier": {"id": "njpwerner.autodocstring"}, "displayName": "Auto Docstring"},

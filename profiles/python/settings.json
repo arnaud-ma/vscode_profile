@@ -11,8 +11,8 @@
     // ruff formatter, see https://github.com/astral-sh/ruff-vscode#example-configurations
     //
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
-      "source.fixAll": true
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
     },
     //
     // editor
@@ -34,11 +34,27 @@
         "color": "#ff0000"
       }
     ],
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "files.trimTrailingWhitespace": false
   },
   "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.terminal.activateEnvironment": true,
+  //
+  //
+  //
+  // NOTEBOOKS
+  //
+  //
+  //
+  "notebook.formatOnSave.enabled": true,
+  "notebook.compactView": true,
+  "notebook.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports.ruff": "explicit",
+  },
+  "notebook.stickyScroll.enabled": true,
+  "notebook.consolidatedRunButton": true,
   //
   //
   //
@@ -47,12 +63,57 @@
   //
   //
   "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode": "basic", // the same setting in the pyproject.toml file overrides this if set
+  "python.analysis.typeCheckingMode": "standard", // the same setting in the pyproject.toml file overrides this if set
   "python.analysis.autoFormatStrings": true,
   "python.analysis.gotoDefinitionInStringLiteral": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.useLibraryCodeForTypes": true,
   "python.analysis.completeFunctionParens": false,
+  "ruff.enable": true,
+  "ruff.codeAction.fixViolation": {
+    "enable": true
+  },
+  "ruff.codeAction.disableRuleComment": {
+    "enable": true
+  },
+  "ruff.configurationPreference": "filesystemFirst",
+  "ruff.lineLength": 88,
+  "ruff.lint.select": [
+    "E",
+    "F",
+    "UP",
+    "EM",
+    "W",
+    "I",
+    "N",
+    "YTT",
+    "ASYNC",
+    "BLE",
+    "FBT",
+    "B",
+    "A",
+    "C4",
+    "DTZ",
+    "EXE",
+    "FA",
+    "ICN",
+    "INP",
+    "PT",
+    "RSE",
+    "SLOT",
+    "SIM",
+    "PTH",
+    "PD",
+    "PL",
+    "TRY",
+    "FLY",
+    "NPY",
+    "FAST",
+    "PERF",
+    "FURB",
+    "RUF",
+  ],
+  "ruff.lint.ignore": [],
   //
   // - errors
   //
@@ -67,7 +128,7 @@
   //
   // - font / writing style
   //
-  "editor.fontFamily": "'Jetbrains Mono', 'Consolas', 'Courier New', monospace",
+  "editor.fontFamily": "'JetbrainsMono Nerd Font', 'Consolas', 'Courier New', monospace",
   "editor.fontLigatures": false,
   "editor.fontSize": 14,
   "editor.lineHeight": 24,
@@ -90,7 +151,7 @@
   "editor.detectIndentation": true,
   "editor.linkedEditing": true,
   "editor.suggest.showWords": false,
-  "editor.occurrencesHighlight": true,
+  "editor.occurrencesHighlight": "singleFile",
   "editor.acceptSuggestionOnEnter": "smart",
   //
   // - minimap
@@ -243,5 +304,5 @@
   "[markdown]": {
     "editor.defaultFormatter": "vscode.markdown-language-features"
   },
-  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart"
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
 }
