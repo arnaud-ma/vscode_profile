@@ -12,25 +12,20 @@ A python profile with useful settings and a full theme already configured. The t
 
 Ligatures are disabled by default. To enable them, search for "ligature" in the settings then change the `editor.fontLigatures` setting to `true`.
 
-### Ruff / black settings
+### Ruff settings
 
-It is not recommended putting any settings for black and ruff (or any other formatter/linter/type checker) in a `settings.json` file, because it will always override settings that are put in a `pyproject.toml` file in the workspace (which is the recommended way to configure those tools for any project, even without vscode).
-
-Instead, you should put the settings in a `pyproject.toml` file at the root of your project / workspace. Here is an example of a `pyproject.toml` template file:
-
+Default settings (rules) are set in the `settings.json` file.
+To override them, use a `pyproject.toml` file at the root of your project / workspace. This is the recommended way to configure those tools for any project, even without vscode. Here is an example of a `pyproject.toml` file for the Ruff linter:
 <details>
 <summary>pyproject.toml</summary>
 <p>
 
 ```toml
-[tool.black]
-# should be same as ruff
-line-length = 88
-
 [tool.ruff]
-# should be same as black
 line-length = 88
+fix=true
 
+[tool.ruff.lint]
 # https://beta.ruff.rs/docs/rules/
 select = [
     "E",    # pycodestyle
@@ -87,10 +82,10 @@ exclude = [
     "venv",
 ]
 
-[tool.ruff.extend-per-file-ignores]
+[tool.ruff.lint.extend-per-file-ignores]
 "__init__.py" = ["F401"] # disable unused import rule in __init__.py files
 
-[tool.ruff.pydocstyle]
+[tool.ruff.lint.pydocstyle]
 # https://beta.ruff.rs/docs/settings/#pydocstyle-convention
 convention = "google"
 
@@ -100,10 +95,10 @@ multiline-quotes = "double"
 docstring-quotes = "double"
 
 
-[tool.ruff.pylint]
+[tool.ruff.lint.pylint]
 max-args = 5
 
-[tool.pyright]
+[tool.lint.pyright]
 # deactivate pyright features that are already covered by ruff
 # actually only enables type checking
 # https://microsoft.github.io/pyright/#/configuration?id=diagnostic-rule-defaults for more info
@@ -123,8 +118,7 @@ reportUnusedFunction = false
 - `Python` - Python extension for Visual Studio Code.
 - `Pylance` - Fast, feature-rich language support for Python, including the pyright static type checker.
 - `Python environment manager` - Browse and manage all of your Python environments & packages from a single place.
-- `Black formatter` -  Support for the [Black](https://github.com/psf/black) formatter.
-- `Ruff` - Support for the [Ruff](https://beta.ruff.rs/docs/) linter.
+- `Ruff` - Support for the [Ruff](https://beta.ruff.rs/docs/) linter and code formatter.
 - `Python indent` - Correct python indentation in VS Code.
 - `autoDocstring` - Automatically generates docstrings.
 - `Even Better TOML` - TOML file support, for project config setup files like `pyproject.toml`.

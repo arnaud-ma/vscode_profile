@@ -96,7 +96,7 @@ class Profile:
         not_dumped = {
             "snippets": {
                 snippet.name: snippet.read_text(encoding="utf8") for snippet in snippets
-            }
+            },
         }
         return json.dumps(not_dumped)
 
@@ -179,6 +179,7 @@ def main():
     for name in profile_names:
         path = DIRECTORY / name.lower().replace(" ", "_")
         Profile(path).write_code_profile(name)
+
 
 if __name__ == "__main__":
     main()
