@@ -25,8 +25,8 @@ an overview of the profile (theme used, extensions installed, etc.) and some rec
 
 | Profile                             | Download link                                                |
 | ----------------------------------- | ---------------------------------------------------------------- |
-| [Python](profiles/python/python.md) | [python.code_profile](profiles/python/python.code-profile?raw=1) |
-| [Latex](profiles/latex/latex.md)    | [latex.code_profile](profiles/latex/latex.code-profile?raw=1)    |
+| [Python](profiles/python/python.md) | [Lython.code_profile](profiles/python/Python.code-profile?raw=1) |
+| [Latex](profiles/latex/latex.md)    | [Latex.code_profile](profiles/latex/Latex.code-profile?raw=1)    |
 
 ## Configuration
 
